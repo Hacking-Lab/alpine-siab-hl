@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  alpine-siab-hl:
+    build: .
+    image: hackinglab/alpine-siab-hl:3.2
+    environment:
+      - "HL_USER_USERNAME=hacker"
+      - "HL_USER_PASSWORD=compass"
+      - "HL_ROOT_PASSWORD=dQ0edEdD6dWZMJj"
+
+    ports:
+      - 4200:4200
